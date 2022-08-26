@@ -30,6 +30,7 @@ const Shell = (props) => (
 
       <div className="text-xl py-5">{props.children}</div>
 
+      {/* I'd really appreciate if you keep this tiny credits footer :) */}
       <footer className="border-t border-gray-300 text-center py-8 text-sm">
         © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
         <span role="img" aria-label="Love">

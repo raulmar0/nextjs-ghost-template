@@ -3,6 +3,7 @@ import Head from 'next/head'
 import {ProjectsGallery} from '../components/ProjectsGallery'
 import { Shell } from '../components/Shell'
 import styles from '../styles/Home.module.css'
+import { AppConfig } from '../utils/AppConfig'
 
 const Projects = () => (
   <div className={styles.container}>
@@ -11,7 +12,7 @@ const Projects = () => (
       <meta name="description" content="raulmar's projects" />
     </Head>
     <Shell location="projects">
-      <ProjectsGallery></ProjectsGallery>
+      <ProjectsGallery projects={AppConfig.projects}></ProjectsGallery>
     </Shell>
   </div>
 )

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { BlogGallery } from '../components/BlogGallery'
 import { Shell } from '../components/Shell'
 import styles from '../styles/Home.module.css'
+import { AppConfig } from '../utils/AppConfig'
 import { getPosts } from '../utils/getPosts'
 
 export const getStaticProps = async ({ params }) => {
@@ -14,7 +15,7 @@ export const getStaticProps = async ({ params }) => {
 const Home = ({ posts }) => (
   <div className={styles.container}>
     <Head>
-      <title>Raulmar</title>
+      <title>{AppConfig.site_name}</title>
       <meta name="description" content="my online home" />
       <link rel="icon" href="/ocean.ico" />
     </Head>
