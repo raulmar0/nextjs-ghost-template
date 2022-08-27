@@ -1,3 +1,5 @@
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -41,7 +43,10 @@ const Post = (props) => {
       <div className='antialiased px-5 md:px-0'>
         <article className="max-w-screen-md mx-auto">
           <Link href='/'>
-              <button className="mt-6 mr-2 px-2 py-1 text-base font-bold text-white uppercase transition-colors duration-200 bg-indigo-500 rounded hover:bg-indigo-800">Back to raulmar</button>
+            <button className="w-max mt-6 mr-2 px-2 py-1 text-base font-bold text-white uppercase transition-colors duration-200 bg-indigo-500 rounded hover:bg-indigo-800">
+              <FontAwesomeIcon icon={faAngleLeft} style={{ fontSize: 15, color: "white" }} />
+              <span className='pl-2'>Back to raulmar</span>
+            </button>
           </Link>
           <h1 className="post-title">{post.title}</h1>
           <div className="post-container" dangerouslySetInnerHTML={{ __html: post.html }}></div>

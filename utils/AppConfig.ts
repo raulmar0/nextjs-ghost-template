@@ -1,8 +1,9 @@
 export const AppConfig = {
-  site_name: 'Raulmar',
-  title: "Hola! this is raulmar🕺",
-  description: 'Welcome to my digital home where I have fun sharing',
-  ghost_url: 'https://ghost.raulmar.com',
+  site_name: 'Next.js + Ghost CMS',
+  title: "👋 This is Next.js ⚡️ template for Ghost CMS 👻",
+  description: 'Starter code for your site',
+  ghost_url: 'https://ghostcms-template.herokuapp.com',
+  ghost_api_version: 'v3.0',
   linkedin_account: 'raulmarhernandez',
   github_account: 'raulmar0',
   email: 'hello@raulmar.com',

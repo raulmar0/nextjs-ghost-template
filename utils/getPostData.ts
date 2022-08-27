@@ -6,7 +6,7 @@ export const getPostData = async (slug: string) => {
   const api = new GhostContentAPI({
     url: AppConfig.ghost_url,
     key: CONTENT_API_KEY,
-    version: "v5.0"
+    version: AppConfig.ghost_api_version
   });
   const posts = await api.posts.read({slug: slug}, {formats: ['html']});
   return posts;

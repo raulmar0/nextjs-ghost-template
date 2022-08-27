@@ -6,9 +6,8 @@ export const getPageData = async (slug: string) => {
   const api = new GhostContentAPI({
     url: AppConfig.ghost_url,
     key: CONTENT_API_KEY,
-    version: "v5.0"
+    version: AppConfig.ghost_api_version
   });
   const page = await api.pages.read({slug: slug}, {fields: ['title', 'html']});
-  api.pages.read({slug: 'something'}, {fields: ['title']});
   return page;
 }
