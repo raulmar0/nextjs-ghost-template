@@ -23,6 +23,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  CONTENT_API_KEY: ${{ secrets.CONTENT_API_KEY }}
+
 jobs:
   # Build job
   build:
