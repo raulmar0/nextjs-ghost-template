@@ -34,6 +34,17 @@ cd my-project-name
 npm install
 ```
 
+First of all, use this line in `next.config.js` if using Github pages
+```
+module.exports = {
+  basePath: '/your-repo-name',
+}
+```
+else use
+```
+module.exports = nextConfig
+```
+
 Then, you can run locally in development mode with live reload:
 
 ```
