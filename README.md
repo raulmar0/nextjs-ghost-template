@@ -1,5 +1,7 @@
 # Minimalist Next.js theme for Ghost CMS 
 
+[Try the demo](https://raulmar0.github.io/nextjs-ghost-template/)
+
 ##  Table of Contents
 1. [Features](#Features)
 2. [Getting started](#getting-started)
